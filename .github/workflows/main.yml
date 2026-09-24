@@ -16,4 +16,12 @@ jobs:
          echo "This is a Devops"
          uname -a
        
-      
+    -  name: check the docker installation
+       run:
+         docker
+         docker images
+
+    -  name: Run Docker Container first step
+       run:
+         docker run hello-world
+         
